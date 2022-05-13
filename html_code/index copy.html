@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Automation Run Report</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <section id=menu>
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+                <h3>ISF Automation</h3>
+            </div>
+            <div class="sidenav">
+                <div class="welcome_menu">
+                    <li><i class="fa fa-home"></i><a href="index">Welcome</a></li>
+                </div>
+                <button class="hci_button"> HCI
+                    <i class="fa fa-caret-down"></i>
+                    <!-- <a href="#">Execution details</a>
+                    <a href="#">Add new jenkins record</a> -->
+                </button>
+<!--                 
+                <div class="hci-options">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div> -->
+                  <div class="hci-options">
+                      <li><i class="fad fa-file-excel"></i><a href="hci_bvt_execs">BVT Excecutions</a></li>
+                      <li><i class="fad fa-file-excel"></i><a href="hci_fvt_execs">FVT/SVT Excecutions</a></li>
+                      <li><i class="fab fa-jenkins"></i><a href="jenkin_jobs">Add Jenkins Build</a></li>
+                      <li><i class="fad fa-chart-pie-alt"></i><a href="#">Dashboard2</a></li>
+                </div>
+
+            </div>
+        </section>
+        <section id=top_header>
+
+            <h3>Welcome!</h3>
+
+        </section>
+
+        <section id=content>
+
+        <div class="welcome"><h1 class="wel_h1">Welcome to IBM Sepctrum Fustion (ISF) automation</h1>                           <h2>The app is to show/update automation executions of HCI and SDS</h2>                           <p>- Click <a href="hci_bvt_execs">here</a> for HCI Automation</p>                           <p>- Click <a href="#">here</a> for SDS Automation</p> </div>
+
+        </section>
+        <script>
+            /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+            var dropdown = document.getElementsByClassName("hci_button");
+            var i;
+            
+            for (i = 0; i < dropdown.length; i++) {
+              dropdown[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var dropdownContent = this.nextElementSibling;
+              if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+              } else {
+              dropdownContent.style.display = "block";
+              }hci-options
+              });
+            }
+            </script>
+    </body>
+</html>
